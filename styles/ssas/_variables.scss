@@ -1,0 +1,43 @@
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ variables ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+// z-index system 
+$ui-index-1: 1; //for crawling elements in the total flow
+$ui-index-2: 2; //for crawling elements in the total flow
+$ui-index-3: 3; //for masks and shadows
+$ui-index-4: 4; //sidebars 
+$ui-index-5: 5; //for modal windows
+$ui-index-6: 6; //for modal windows
+
+//colors 
+$elem-hover-color: #5932EA;
+
+$active-button-background: #16c09861;
+$active-button-color: #008767;
+
+$inactive-button-background: #FFC5C5;
+$inactive-button-color: #DF0404;
+
+$body-background-color: #FAFBFF;
+$search-bar-background-color: #F9FBFF;
+$pagination-btn-background-color: #F5F5F5;
+$pagination-btn-color:#404B52;
+$pagination-btn-border-color: #EEE; 
+$white: #FFFFFF;
+
+$aside-text-color: #9197B3;
+$table-light-text-color: #B5B7C0;
+$table-dark-text-color: #292D32;
+
+//font-size
+$h1: 1.86rem;
+$h2: 1.6rem;
+$h3: 1.375rem;
+$small-font-size: 0.875rem;
+
+//transition 
+$transition: .2s all ease;
+
+// @media  
+$ui-mobile: '500px';
+$ui-tablet: '1000px';
+$ui-desktop: '1200px';

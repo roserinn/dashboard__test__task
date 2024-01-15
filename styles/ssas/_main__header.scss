@@ -1,0 +1,71 @@
+.main__header {
+  margin-bottom: 51px;
+  display: flex;
+  justify-content: space-between;
+
+  .header__row {
+    display: flex;
+
+    .row__title {
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-left: 1px;
+    }
+  }
+}
+
+@include desktop() {
+  .main__header {
+    margin-bottom: 40px;
+
+    .header__row {
+      .row__title {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: $h3;
+      }
+    }
+  }
+}
+
+
+@include tablet() {
+  .main__header {
+    width: 700px;
+
+    .header__row {
+
+      .row__title {
+        font-size: $h1;
+      }
+
+      p {
+        font-size: $h1;
+      }
+    }
+  }
+}
+
+
+@include mobile() {
+  .main__header {
+    width: 400px;
+
+    .header__row {
+
+      .row__title {
+        font-size: $h1;
+      }
+
+      p {
+        font-size: $h1;
+      }
+    }
+  }
+}

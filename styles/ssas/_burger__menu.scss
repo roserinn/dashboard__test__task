@@ -1,0 +1,24 @@
+
+.burger__menu {
+  display: none;
+}
+
+@include tablet() {
+  .burger__menu {
+    display: block;
+  }
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.407);  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: $ui-index-3;
+  opacity: 0;
+  display: none;
+  transition: all .5s ease;
+}

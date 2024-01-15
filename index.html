@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./img/setting.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="aside">
+
+      <div class="aside__logo">
+        <img src="./img/setting.svg" alt="setting">
+        <div class="aside__logo__wrapper">
+          <h1>Dashboard</h1>
+          <span>v.01</span>
+        </div>
+
+      </div>
+      <nav class="aside__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="item__link">
+              <span class="item__wrapper">
+                <img src="./img/aside_icons/key-square.svg" alt="key-square">
+                <span>Dashboard</span>
+              </span>
+              <img src="./img/arrow__gray.svg" alt="arrow">
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="item__link">
+              <span class="item__wrapper">
+                <img src="./img/aside_icons/3d-square.svg" alt="3d-square">
+                <span>Product</span>
+              </span>
+              <img src="./img/arrow__gray.svg" alt="arrow">
+            </a>
+          </li>
+
+          <li class="navigation__item active">
+            <a href="#" class="item__link">
+              <span class="item__wrapper">
+                <img src="./img/aside_icons/user-square.svg" alt="user-square">
+                <span>Customers</span>
+              </span>
+
+              <img src="./img/arrow__gray.svg" alt="arrow">
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="item__link">
+              <span class="item__wrapper">
+                <img src="./img/aside_icons/wallet-money.svg" alt="wallet-money">
+                <span>Income</span>
+              </span>
+              <img src="./img/arrow__gray.svg" alt="arrow">
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="item__link">
+              <span class="item__wrapper">
+                <img src="./img/aside_icons/discount-shape.svg" alt="discount-shape">
+                <span>Promote</span>
+              </span>
+              <img src="./img/arrow__gray.svg" alt="arrow">
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="item__link">
+              <span class="item__wrapper">
+                <img src="./img/aside_icons/message-question.svg" alt="message-question">
+                <span> Help</span>
+              </span>
+              <img src="./img/arrow__gray.svg" alt="arrow">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="aside__footer">
+        <div class="aside__footer__user">
+          <img src="./img/ava.svg" alt="ava">
+          <div class="aside__footer__user__info">
+            <p>Evano</p>
+            <span>Project Manager</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main__wrapper">
+
+      <section class="main__header">
+
+        <div class="header__row">
+          <h1 class="row__title">
+            Hello Evano
+          </h1>
+          <p>
+            👋🏼,
+          </p>
+        </div>
+        <div class="burger__menu">
+          <img src="./img/free-icon-menu-bar-8111040.png" alt="menu">
+        </div>
+      </section>
+
+      <section class="table">
+        <div class="table__container">
+          <div class="table__header">
+
+            <div class="table__header__title">
+              <h2>All Customers</h2>
+              <p>Active Members</p>
+            </div>
+
+            <div class="table__header__search">
+              <div class="table__header__search__container">
+                <form action="/search" method="GET">
+                  <button type="submit" class="table__header__search__button">
+                    <img src="./img/search.svg" alt="search">
+                  </button>
+                  <input type="text" class="table__header__search__input" name="query" placeholder="Search">
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="table__info">
+            <div class="table__categories">
+              <div class="categories__wrapper">
+                <div class="cell__name">
+                  <p>Customer Name</p>
+                </div>
+                <div class="cell__company">
+                  <p>Company</p>
+                </div>
+                <div class="cell__phone">
+                  <p>Phone Number</p>
+                </div>
+                <div class="cell__email">
+                  <p>Email</p>
+                </div>
+
+                <div class="cell__country">
+                  <p>Country</p>
+                </div>
+                <div class="cell__status">
+                  <p>Status</p>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Jane Cooper</p>
+                </div>
+                <div class="cell__company">
+                  <p>Microsoft</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(225) 555-0118</p>
+                </div>
+                <div class="cell__email">
+                  <p>jane@microsoft.com</p>
+                </div>
+
+                <div class="cell__country">
+                  <p>United States</p>
+                </div>
+                <div class="cell__status">
+                  <button>Active</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Floyd Miles</p>
+                </div>
+                <div class="cell__company">
+                  <p>Yahoo</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(205) 555-0100</p>
+                </div>
+                <div class="cell__email">
+                  <p>floyd@yahoo.com</p>
+                </div>
+
+                <div class="cell__country">
+                  <p>Kiribati</p>
+                </div>
+                <div class="cell__status">
+                  <button class="inactive">Inactive</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Ronald Richards</p>
+                </div>
+                <div class="cell__company">
+                  <p>Adobe</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(302) 555-0107</p>
+                </div>
+                <div class="cell__email">
+                  <p>ronald@adobe.com</p>
+                </div>
+                <div class="cell__country">
+                  <p>Israel</p>
+                </div>
+                <div class="cell__status">
+                  <button class="inactive">Inactive</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Marvin McKinney</p>
+                </div>
+                <div class="cell__company">
+                  <p>Tesla</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(252) 555-0126</p>
+                </div>
+                <div class="cell__email">
+                  <p>marvin@tesla.com</p>
+                </div>
+
+                <div class="cell__country">
+                  <p>Iran</p>
+                </div>
+                <div class="cell__status">
+                  <button>Active</button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Jerome Bell</p>
+                </div>
+                <div class="cell__company">
+                  <p>Google</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(629) 555-0129</p>
+                </div>
+                <div class="cell__email">
+                  <p>jerome@google.com</p>
+                </div>
+                <div class="cell__country">
+                  <p>Réunion</p>
+                </div>
+                <div class="cell__status">
+                  <button>Active</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Kathryn Murphy</p>
+                </div>
+                <div class="cell__company">
+                  <p>Microsoft</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(406) 555-0120</p>
+                </div>
+                <div class="cell__email">
+                  <p>kathryn@microsoft.com</p>
+                </div>
+                <div class="cell__country">
+                  <p>Curaçao</p>
+                </div>
+                <div class="cell__status">
+                  <button>Active</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Jacob Jones</p>
+                </div>
+                <div class="cell__company">
+                  <p>Yahoo</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(208) 555-0112</p>
+                </div>
+                <div class="cell__email">
+                  <p>jacob@yahoo.com</p>
+                </div>
+                <div class="cell__country">
+                  <p>Brazil</p>
+                </div>
+                <div class="cell__status">
+                  <button>Active</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__row__wrapper">
+                <div class="cell__name">
+                  <p>Kristin Watson</p>
+                </div>
+                <div class="cell__company">
+                  <p>Facebook</p>
+                </div>
+                <div class="cell__phone">
+                  <p>(704) 555-0127</p>
+                </div>
+                <div class="cell__email">
+                  <p>kristin@facebook.com</p>
+                </div>
+                <div class="cell__country">
+                  <p>Åland Islands</p>
+                </div>
+                <div class="cell__status">
+                  <button class="inactive">Inactive</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table__footer">
+            <div class="table__footer__row">
+              <p class="table__footer__info">Showing data 1 to 8 of 256K entries</p>
+
+              <div class="table__footer__pagination">
+                <button class="table__footer__pagination-btn prev">
+                  <span>&lt;</span>
+                </button>
+                <button class="table__footer__pagination-btn num active_">
+                  <span>1</span>
+                </button>
+                <button class="table__footer__pagination-btn num">
+                  <span>2</span>
+                </button>
+                <button class="table__footer__pagination-btn num">
+                  <span>3</span>
+                </button>
+                <button class="table__footer__pagination-btn num">
+                  <span>4</span>
+                </button>
+                <div class="table__footer__pagination-more">
+                  <span>...</span>
+                </div>
+                <button class="table__footer__pagination-btn num">
+                  <span>40</span>
+                </button>
+                <button class="table__footer__pagination-btn next">
+                  <span>&gt;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+  <div class="overlay"></div>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

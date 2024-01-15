@@ -1,0 +1,60 @@
+@mixin inactiveBtn() {
+  background-color: $inactive-button-background;
+  color: $inactive-button-color;
+  font-weight: 500;
+  width: 80px;
+  margin-right: 10px;
+  letter-spacing: -0.14px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid $inactive-button-color;
+}
+
+@mixin activeBtn() {
+  background-color: $active-button-background;
+  color: $active-button-color;
+  font-weight: 500;
+  width: 80px;
+  letter-spacing: -0.14px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid $active-button-color;
+}
+
+@mixin paginationBtn() {
+  background-color: $pagination-btn-background-color;
+  color: $pagination-btn-color;
+  width: 25px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid $pagination-btn-border-color;
+  transition: $transition;
+
+  &:hover {
+    background-color: $elem-hover-color;
+    color: $white;
+    border: 1px solid $elem-hover-color;
+  }
+}
+
+@mixin paginationBtnActive() {
+  background-color: $elem-hover-color;
+  color: $white;
+  width: 25px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid $elem-hover-color;
+  transition: $transition;
+
+  &:hover {
+    background-color: $pagination-btn-background-color;
+    color: $pagination-btn-color;
+    border: 1px solid $pagination-btn-border-color;
+  }
+}

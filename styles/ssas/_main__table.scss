@@ -1,0 +1,348 @@
+  .table {
+
+    &__container {
+      background-color: $white;
+      padding: 31px 44px 40px 38px;
+      height: 819px;
+      border-radius: 35px;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      width: 887px;
+
+      &__title {
+        margin-top: 11px;
+
+        h2 {
+          font-size: $h2;
+          font-weight: 600;
+          letter-spacing: -0.4px;
+          margin-bottom: 16px;
+        }
+
+        p {
+          color: #16C098;
+          letter-spacing: -0.14px;
+        }
+      }
+
+
+      &__search {
+        width: 216px;
+        height: 38px;
+        margin: 11px 10px 0px 0px;
+
+        &__container {
+
+          form {
+            display: flex;
+            border-radius: 10px;
+            background-color: $search-bar-background-color;
+            margin-top: 9px;
+            padding: 7px 8px;
+          }
+        }
+
+        &__button {
+          background-color: $search-bar-background-color;
+          padding-right: 8px;
+        }
+
+        &__input {
+          &::placeholder {
+            color: #B5B7C0;
+            font-size: $small-font-size;
+            letter-spacing: -0.12px;
+          }
+
+          background-color: $search-bar-background-color;
+        }
+      }
+
+
+    }
+
+    &__categories {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      color: $table-light-text-color;
+      border-bottom: 1px solid #EEE;
+    }
+    
+    &__footer {
+      display: flex;
+    }
+  }
+
+
+  .categories {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .info {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 69px;
+      letter-spacing: .10px;
+      border-bottom: 1px solid #EEE;
+
+      p {
+        letter-spacing: -.01px;
+      }
+      // останні три кнопки в макеті мають ширину 84px, у той час як всі інші -- 80px, писати окремий класс для цих трьох кнопок не корректно, тому вони можуть не збігатися з макетом
+      button {
+        @include activeBtn()
+      }
+
+      .inactive {
+        @include inactiveBtn()
+      }
+
+      &__wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+    }
+  }
+
+  .table__footer {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      width: 100%;
+
+      p {
+        color: $table-light-text-color;
+      }
+    }
+
+    &__pagination {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+      width: 266px;
+    }
+
+
+    .prev {
+      @include paginationBtn();
+    }
+
+    .num {
+      @include paginationBtn();
+    }
+
+    .more {
+      font-size: 2rem;
+    }
+
+    .next {
+      @include paginationBtn();
+    }
+
+    .active_ {
+      @include paginationBtnActive();
+    }
+  }
+
+  //cels 
+  .cell__name {
+    width: 172px;
+  }
+
+  .cell__company {
+    width: 132px;
+  }
+
+  .cell__phone {
+    width: 155px;
+  }
+
+  .cell__email {
+    width: 207px;
+  }
+
+  .cell__country {
+    width: 139px;
+  }
+
+  .cell__status {
+    width: 68px;
+    text-align: center;
+  } 
+
+
+  @include desktop() {
+    .table {
+      &__container {
+        background-color: $white;
+        padding: 27px 35px 38px;
+        height: 720px;
+        width: 800px;
+        border-radius: 30px;
+      }
+
+      &__header {
+       width: 740px;
+        margin-bottom: 40px;
+      }
+
+      &__categories {
+        margin-bottom: 15px;
+      }
+    }
+
+    .header {
+      &__title {
+
+        h2 {
+          font-size: $h3;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+
+    .header__search {
+      width: 200px;
+      height: 30px;
+    }
+
+    .table__info {
+      overflow-x: scroll;
+
+    }
+
+    .info {
+      &__row {
+        padding: 15px 0;
+        letter-spacing: .10px;
+      }
+    }
+
+    .table__footer {
+      &__row {
+        padding: 15px 0;
+      }
+    }
+
+    .cell__name {
+      width: 150px;
+    }
+
+    .cell__company {
+      width: 110px;
+    }
+
+    .cell__phone {
+      width: 155px;
+    }
+
+    .cell__email {
+      width: 200px;
+    }
+
+    .cell__country {
+      width: 130px;
+    }
+  }
+
+
+  @include tablet() {
+    .table {
+      width: 700px;
+
+      &__container {
+        padding: 20px 30px 30px;
+        height: 700px;
+        width: 700px;
+        border-radius: 30px;
+      }
+
+      &__header {
+        width: 650px;
+        margin-bottom: 40px;
+      }
+
+      &__categories {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+  @include mobile() {
+    .table {
+      width: 400px;
+
+      &__container {
+        padding: 20px 30px 30px;
+        height: 700px;
+        width: 400px;
+        border-radius: 30px;
+
+      }
+
+      &__header {
+        margin-bottom: 30px;
+        width: 380px;
+      }
+
+      &__categories {
+        margin-bottom: 10px;
+      }
+    }
+
+    .info {
+      &__row {
+        padding: 10px 0;
+        letter-spacing: .10px;
+      }
+    }
+
+    .header {
+      &__title {
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .header__search {
+      width: 120px;
+      height: 30px;
+    
+    }
+ form {
+        width: 210px;
+      }
+    .search__input {
+      width: 10px;
+     
+    }
+
+    .table__footer {
+      &__row {
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      &__pagination {
+        margin-top: 10px;
+      }
+    }
+  }

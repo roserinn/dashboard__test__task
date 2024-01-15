@@ -1,0 +1,58 @@
+@import './variables';
+@import './mixins';
+@import './reset';
+@import './media_breakpoints';
+@import './fonts';
+
+body {
+  background-color: $body-background-color;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  margin: 0 auto
+}
+
+@import './sidebar';
+@import './burger__menu';
+@import './main__header';
+@import './main__table';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main__wrapper {
+  width: 1134px;
+  height: 900px;
+  padding: 46px 95px 258px 71px;
+}
+
+@include desktop() {
+  .wrapper {
+    width: 1000px;
+  }
+
+  .main__wrapper {
+    width: 100%;
+  }
+}
+
+@include tablet() {
+  .wrapper {
+    width: 100%;
+  }
+  .main__wrapper {
+    padding: 20px 95px 258px 71px;
+  }
+}
+
+@include mobile() {
+  .wrapper {
+    width: 100%;
+  }
+  .main__wrapper {
+    padding: 20px 20px 258px 20px;
+  }
+} 

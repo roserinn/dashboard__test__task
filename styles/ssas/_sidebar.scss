@@ -1,0 +1,156 @@
+.aside {
+  width: 306px;
+  height: 1198px;
+  background-color: $white;
+  padding: 37px 28px 76px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 54px;
+
+    &__wrapper {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+
+
+      h1 {
+        color: #000;
+        font-weight: 600;
+        letter-spacing: 0.01625rem;
+        font-size: $h1;
+      }
+
+      span {
+        color: #838383;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: -0.00625rem;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 568px;
+    display: flex;
+
+    &__user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &__info {
+        p {
+          color: #000;
+          font-weight: 500;
+          letter-spacing: 0.14px;
+          margin-bottom: 4px;
+        }
+
+        span {
+          font-size: $small-font-size;
+          font-weight: 400;
+        }
+
+      }
+    }
+  }
+}
+
+.navigation__list {
+  li {
+    display: flex;
+    justify-content: center;
+  
+  }
+}
+
+.active {
+  a {
+    background-color: $elem-hover-color;
+    color: $white !important;
+    font-weight: 500;
+    letter-spacing: -0.14px;
+
+
+    img {
+      filter: grayscale(100%) brightness(200%) saturate(0%) contrast(1000%);
+    }
+  }
+}
+
+.navigation__list {
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 46px;
+    padding: 13px 8px 12px 11px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    color: #9197B3;
+    transition: $transition;
+
+    &:hover {
+      background-color: $elem-hover-color;
+      color: $white !important;
+      font-weight: 500;
+      letter-spacing: -0.14px;
+
+      img {
+        filter: grayscale(100%) brightness(200%) saturate(0%) contrast(1000%);
+      }
+
+
+    }
+  }
+
+}
+
+.item__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+
+@include desktop() {
+  .aside {
+    width: 250px;
+    padding: 30px 20px 76px;
+
+    &__logo {
+      margin-bottom: 50px;
+
+      &__wrapper {
+
+        h1 {
+          font-size: $h2;
+        }
+      }
+    }
+  }
+
+  .navigation__list {
+    a {
+      margin-bottom: 15px;
+      font-size: .9rem;
+    }
+  }
+}
+
+
+@include tablet() {
+  .aside {
+    position: absolute;
+    padding: 20px;
+    width: 250;
+    z-index: $ui-index-4; 
+    display: none;
+    opacity: 0;
+  }
+}
